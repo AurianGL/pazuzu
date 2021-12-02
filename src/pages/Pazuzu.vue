@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { PazuzuProvider } from "@/providers"
-import { PazuzuInject } from "@/components/Pazuzu"
+import { PazuzuInject, Lamashtu, Card } from "@/components/Pazuzu"
 </script>
 <template>
   <PazuzuProvider>
@@ -16,7 +16,12 @@ import { PazuzuInject } from "@/components/Pazuzu"
         to-yellow-500
       "
     >
-      <PazuzuInject />
+      <Card>
+        <PazuzuInject />
+      </Card>
+      <Card>
+        <Lamashtu context="lamashtu" />
+      </Card>
     </div>
   </PazuzuProvider>
 </template>
