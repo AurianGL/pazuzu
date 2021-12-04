@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { PazuzuProvider } from "@/providers"
+import { ComposedProvider } from "@/providers"
 import { PazuzuInject, Lamashtu, Lilitu, Card } from "@/components/Pazuzu"
 </script>
 <template>
-  <PazuzuProvider>
+  <ComposedProvider>
     <div
       class="
         w-screen
@@ -27,5 +27,5 @@ import { PazuzuInject, Lamashtu, Lilitu, Card } from "@/components/Pazuzu"
         <Lilitu />
       </Card>
     </div>
-  </PazuzuProvider>
+  </ComposedProvider>
 </template>

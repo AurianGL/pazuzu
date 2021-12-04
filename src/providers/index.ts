@@ -1,3 +1,5 @@
-import PazuzuProvider from './pazuzu_provider.vue';
+import PazuzuProvider from './Pazuzu_provider.vue';
+import LamashtuProvider from './Lamashtu_provider.vue';
+import ComposedProvider from './Composed_provider.vue'
 
-export { PazuzuProvider };
+export { PazuzuProvider, LamashtuProvider, ComposedProvider};
