@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { PazuzuProvider } from "@/providers"
-import { PazuzuInject, Lamashtu, Card } from "@/components/Pazuzu"
+import { PazuzuInject, Lamashtu, Lilitu, Card } from "@/components/Pazuzu"
 </script>
 <template>
   <PazuzuProvider>
@@ -8,19 +8,23 @@ import { PazuzuInject, Lamashtu, Card } from "@/components/Pazuzu"
       class="
         w-screen
         h-screen
-        bg-gradient-to-b
+        bg-pazuzu-img
+        bg-center
+        bg-no-repeat
         flex
         items-center
         justify-center
-        from-red-600
-        to-yellow-500
+        bg-black
       "
     >
-      <Card>
+      <Card title="Inject">
         <PazuzuInject />
       </Card>
-      <Card>
+      <Card title="Dynamic inject">
         <Lamashtu context="lamashtu" />
+      </Card>
+      <Card title="With vueX">
+        <Lilitu />
       </Card>
     </div>
   </PazuzuProvider>

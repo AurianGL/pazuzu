@@ -1,6 +1,17 @@
+<script setup lang="ts">
+const props = defineProps({
+  title: {
+    type: String,
+    default: "Pouet"
+  }
+})
+</script>
+
 <template>
-  <div class="text-gray-900 text-xl font-bold text-center p-4 m-2 border-2 border-red-600 rounded bg-gradient-to-b from-red-600
-        to-transparent">
-    <slot></slot>
+  <div class="font-bold text-center p-2">
+    <div class="bg-yellow-500 text-center rounded">{{ props.title }}</div>
+    <div class="text-gray-900 text-xl p-4 mt-2 rounded bg-yellow-500">
+      <slot></slot>
+    </div>
   </div>
 </template>
